@@ -23,13 +23,13 @@ namespace geometria
 
         public int calcolaArea(int baseRettangolo, int altezzaRettangolo)
         {
-            int areaRettangolo = this.baseRettangolo * this.altezzaRettangolo;
+            int areaRettangolo = (this.baseRettangolo * this.altezzaRettangolo);
             return areaRettangolo;
         }
 
         public int calcolaPerimetro(int baseRettangolo, int altezzaRettangolo)
         {
-            int perimetroRettangolo = (this.altezzaRettangolo + this.baseRettangolo) * 2;
+            int perimetroRettangolo = ((this.altezzaRettangolo + this.baseRettangolo) * 2);
             return perimetroRettangolo;
         }
     }
