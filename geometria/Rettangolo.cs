@@ -49,12 +49,16 @@ namespace geometria
             Console.WriteLine(" ");
             Console.Write(" ");
 
+            // Lato superiore
+
             for (int i = 0; i < baseRettangolo - 1; i++) 
             {
               Console.Write(asseX);
             }
 
             Console.WriteLine(asseX);
+            
+            // Lati laterali
 
             for (int i = 0; i < altezzaRettangolo; i++)
             {
@@ -69,6 +73,8 @@ namespace geometria
             }
 
             Console.Write(" ");
+            
+            // Lato inferiore
 
             for (int i = 0; i < baseRettangolo - 1; i++)
             {
