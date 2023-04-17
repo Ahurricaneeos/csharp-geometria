@@ -7,12 +7,10 @@ Console.WriteLine("Inserisci l'altezza del rettangolo: ");
 int altezzaRettangolo = int.Parse(Console.ReadLine());
 
 Rettangolo rettangoloUno = new Rettangolo(baseRettangolo, altezzaRettangolo);
+Rettangolo rettangoloDue = new Rettangolo(20, 15);
 
-int perimetroRettangolo = rettangoloUno.calcolaPerimetro(baseRettangolo, altezzaRettangolo);
-int areaRettangolo = rettangoloUno.calcolaArea(baseRettangolo, altezzaRettangolo);
+int perimetroRettangolo = rettangoloUno.calcolaPerimetro();
+int areaRettangolo = rettangoloUno.calcolaArea();
 
-Console.WriteLine("-- Rettangolo --");
-Console.WriteLine("Base: " + baseRettangolo);
-Console.WriteLine("Altrezza: " +  altezzaRettangolo);
-Console.WriteLine("Perimetro: " + perimetroRettangolo);
-Console.WriteLine("Area: " + areaRettangolo);
+rettangoloUno.stampaRettangolo();
+rettangoloDue.stampaRettangolo();
