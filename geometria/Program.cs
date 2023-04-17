@@ -14,3 +14,5 @@ int areaRettangolo = rettangoloUno.calcolaArea();
 
 rettangoloUno.stampaRettangolo();
 rettangoloDue.stampaRettangolo();
+
+rettangoloDue.disegnaRettangolo();

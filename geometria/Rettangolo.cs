@@ -41,5 +41,42 @@ namespace geometria
             Console.WriteLine("Perimetro: " + calcolaPerimetro() + "cm");
             Console.WriteLine("Area: " + calcolaArea() + "cm2");
         }
+        public void disegnaRettangolo()
+        {
+            string asseX = "--";
+            string asseY = "|";
+
+            Console.WriteLine(" ");
+            Console.Write(" ");
+
+            for (int i = 0; i < baseRettangolo - 1; i++) 
+            {
+              Console.Write(asseX);
+            }
+
+            Console.WriteLine(asseX);
+
+            for (int i = 0; i < altezzaRettangolo; i++)
+            {
+              Console.Write(asseY);
+
+               for (int j = 0; j < baseRettangolo; j++) 
+               {
+                  Console.Write("  ");
+               }
+
+              Console.WriteLine(asseY);
+            }
+
+            Console.Write(" ");
+
+            for (int i = 0; i < baseRettangolo - 1; i++)
+            {
+               Console.Write(asseX);
+            }
+
+            Console.WriteLine(asseX);
+
+        }
     }
 }
